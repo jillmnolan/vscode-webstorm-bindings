@@ -1,0 +1,40 @@
+{
+    "name": "vscode-webstorm-bindings",
+    "displayName": "WebStorm Keymap for VSCode",
+    "description": "Import Webstorm keybindings into Visual Studio Code",
+    "version": "0.0.1",
+    "publisher": "JillMNolan",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "keywords": [
+        "keybindings",
+        "keymap"
+    ],
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jillmnolan/vscode-webstorm-keybindings.git"
+    },
+    "homepage": "https://github.com/jillmnolan/",
+    "bugs": {
+        "url": "https://github/com/jillmnolan/vscode-webstorm-keybindings/issues"
+    },
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "ctrl+.",
+                "command": "workbench.action.showCommands"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^1.1.37"
+    }
+}
